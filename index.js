@@ -51,10 +51,8 @@ conexao.query(sql, (erro, dados) => {
         }
     })
     
-    
-})
-
-    resposta.render('home')
+    resposta.render('home', { tarefas})
+    })
 })
 
 const conexao = mysql.createConnection({
